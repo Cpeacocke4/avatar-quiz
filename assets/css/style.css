@@ -51,6 +51,12 @@ body {
     background-color: #e57027;
 }
 
+.question-console {
+    background: #9ac1e1;
+    display: flex;
+    justify-content: center;
+}
+
 .hide {
     display: none;
 }
@@ -73,11 +79,36 @@ p {
     border-radius: 35px;
     height: 2em;
     width: 5em;
-    margin: 2em;
+    margin-top: 2em;
+}
+
+.answer-btn {
+    color: #9ac1e1;
+    font-size: .8em;
+    background: white;
+    border: none;
+    border-radius: 35px;
+    height: 2em;
+    width: auto;
+    margin-top: 2em;
+    padding: .5em;
+    color: #984737;
+}
+
+#home-screen {
+    display: flex;
+    margin: auto;
+    padding: 1em;
+    background: none;
+    color: white;
 }
 
 .btn:hover {
     color: #984737;
 }
 
+a {
+    font-size: .5em;
+    text-align: center;
+}
 
