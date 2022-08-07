@@ -19,8 +19,8 @@
             </div>
             
             <div class="console-container">
-                <div class="console">
-                    <div class="text-content">
+                <div class="console" id="welcome-page">
+                    <div class="text-content" >
                         <h3>Welcome!</h3>
                         <p>This is the ultimate avatar The
                             last airbender fan quiz.
@@ -37,13 +37,13 @@
                 </div>
                 
                 <div class="console-container ">
-                    <div class="console question-console hide" >
+                    <div class="console question-console hide" id="question-page">
                         <div class="text-content">
-                            <p class="question">Q: What happened to Zuko's Mom?</p>
-                            <div>
-                                <button id="answer1" class="answer-btn">She was murdered</button>
-                                <button id="answer1" class="answer-btn">She was banished</button>
-                                <button id="answer1" class="answer-btn">She became the next avatar</button>
+                            <p id="question"></p>
+                            <div id="answers">
+                                <button class="answer-btn"></button>
+                                <button class="answer-btn"></button>
+                                <button class="answer-btn"></button>
                             </div>
 
                             <button class="btn" data-type="next">Next</button>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 
-                <div class="console hide">
+                <div class="console hide" id="result-page">
                     <div class="text-content">
                         <h3>Msg</h3>
                         <p>Result msg</p>
