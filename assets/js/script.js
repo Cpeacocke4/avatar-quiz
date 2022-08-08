@@ -16,7 +16,74 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-let questions = [
+let questionElement = document.getElementById("question");
+
+let shuffledQuestions, currentQuestionIndex
+
+let answerButtonsDiv = document.getElementById('answers');
+
+let nextButton = document.getElementById('next-btn');
+
+function startGame() {
+    
+    let welcomePage = document.getElementById("welcome-page");
+    let questionPage = document.getElementById("question-page");
+    
+    shuffledQuestions = questions.sort((a, b) => 0.5 - Math.random());
+    currentQuestionIndex = 0;
+    
+    welcomePage.classList.add("hide");
+    questionPage.classList.remove("hide");
+
+    nextQuestion();
+}
+
+function nextQuestion() {
+    
+    resetState();
+    
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    console.log("Next Question Loaded!");
+    
+}
+
+function showQuestion(question) {
+    
+    questionElement.innerHTML = question.question;
+    question.answers.forEach(answer => {
+        let button = document.createElement("button")
+        button.innerText = answer.text
+        button.classList.add('answer-btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsDiv.appendChild(button);
+    })
+}
+
+function resetState() {
+    let nextButton = document.getElementById('next-btn');
+    nextButton.classList.add('hide');
+
+    while (answerButtonsDiv.firstChild) {
+        answerButtonsDiv.removeChild(answerButtonsDiv.firstChild)
+    }
+}
+
+function selectAnswer(event) {
+    
+    nextButton.classList.remove('hide');
+
+    console.log('Answer Selected!', event);
+    let answers = document.getElementsByClassName('.answer-btn');
+    
+}
+
+
+function calculateResult() {}
+
+const questions = [
     {
         question : "How many years was Aang imprisoned in the glacier?",
         answers : [
@@ -77,54 +144,4 @@ let questions = [
         
     },
 ]
-
-let questionElement = document.getElementById("question");
-
-let shuffledQuestions, currentQuestionIndex
-
-function startGame() {
-    
-    let welcomePage = document.getElementById("welcome-page");
-    let questionPage = document.getElementById("question-page");
-    
-    shuffledQuestions = questions.sort((a, b) => 0.5 - Math.random());
-    currentQuestionIndex = 0;
-    
-    welcomePage.classList.add("hide");
-    questionPage.classList.remove("hide");
-
-    nextQuestion();
-}
-
-function nextQuestion() {
-    
-    resetState();
-    
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-    console.log("Next Question Loaded!");
-    
-}
-
-function resetState() {
-}
-
-function showQuestion(question) {
-    
-    let answerButtonsDiv = document.getElementById('answers');
-    questionElement.innerHTML = question.question;
-    question.answers.forEach(answer => {
-        let button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add('answer-btn')
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', selectAnswer())
-        answerButtonsDiv.appendChild(button);
-    })
-}
-
-function selectAnswer(e) {}
-
-function calculateResult() {}
 

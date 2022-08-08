@@ -91,6 +91,8 @@ p {
     height: auto;
     width: auto;
     margin-top: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     padding: .5em;
     color: #984737;
 }
@@ -110,5 +112,15 @@ p {
 a {
     font-size: .5em;
     text-align: center;
+}
+
+.answer-btn.correct {
+    background-color: #6d935c;
+    color: white;
+}
+
+.answer-btn.wrong {
+    background-color: #b72f15;
+    color: white;
 }
 
