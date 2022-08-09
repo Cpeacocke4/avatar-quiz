@@ -24,6 +24,10 @@ let answerButtonsDiv = document.getElementById('answers');
 
 let nextButton = document.getElementById('next-btn');
 
+let score = 0;
+
+let numOfQuestions = 0;
+
 function startGame() {
     
     let welcomePage = document.getElementById("welcome-page");
@@ -42,24 +46,39 @@ function nextQuestion() {
     
     resetState();
     
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-    console.log("Next Question Loaded!");
+    numOfQuestions ++;
+
+    let questionTally = document.getElementById('question-tally');
+    questionTally.innerText = `${numOfQuestions}/10`
+
+    if (numOfQuestions === 10) {
+
+        endQuiz();
+    } else {
+
+        showQuestion(shuffledQuestions[currentQuestionIndex]);
+    }
     
+    console.log("Next Question Loaded!");  
 }
 
 function showQuestion(question) {
     
-    questionElement.innerHTML = question.question;
+    questionElement.innerHTML = 'Q: '+ question.question;
+    
     question.answers.forEach(answer => {
+        
         let button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add('answer-btn')
+        
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
+        
         button.addEventListener('click', selectAnswer)
         answerButtonsDiv.appendChild(button);
-    })
+    });  
 }
 
 function resetState() {
@@ -74,14 +93,46 @@ function resetState() {
 function selectAnswer(event) {
     
     nextButton.classList.remove('hide');
-
-    console.log('Answer Selected!', event);
-    let answers = document.getElementsByClassName('.answer-btn');
     
+    console.log('Answer Selected!');
+    let answers = document.querySelectorAll('.answer-btn');
+
+        
+    answers.forEach(answer => {
+
+        console.log(answer);
+        console.log(answer.dataset.correct);
+        
+        if (answer.dataset.correct) {
+            answer.classList.add('correct');
+        } else {
+            answer.classList.add('wrong');
+        }
+    });
+
+     if (event.target.dataset.correct === 'true') {
+        score ++;
+     }
+
+    console.log('event', event.target.dataset);
+
+    disableAnswers();
+    console.log(score);
 }
 
+function disableAnswers() {
 
-function calculateResult() {}
+        let answerButtons = document.getElementsByClassName('answer-btn');
+
+        for(var i = 0; i < answerButtons.length; i++) {
+            answerButtons[i].disabled = true;
+        }
+        console.log('Asnwers Disabled!')
+}
+
+function endQuiz() {
+    console.log('Quiz Ended, You suck!!!');
+}
 
 const questions = [
     {
@@ -140,6 +191,483 @@ const questions = [
             {text : "Iroh", correct : false},
             {text : "Zuko", correct : false},
             {text : "Azula", correct : true},
+        ]
+        
+    },
+    {
+        question : "In which season did the gang meet Toph?",
+        answers : [
+            {text : "Fire", correct : false},
+            {text : "Earth", correct : true},
+            {text : "Water", correct : false},
+        ]
+        
+    },
+    {
+        question : "In which Air Temple did Aang find Momo?",
+        answers : [
+            {text : "Northern Air Temple", correct : false},
+            {text : "Western Air Temple", correct : false},
+            {text : "Southern Air Temple", correct : true},
+        ]
+        
+    },
+    {
+        question : "What element does Sokka bend?",
+        answers : [
+            {text : "Water", correct : false},
+            {text : "None", correct : true},
+            {text : "Fire", correct : false},
+        ]
+        
+    },
+    {
+        question : "How many stomachs does Appa have?",
+        answers : [
+            {text : "6", correct : true},
+            {text : "3", correct : false},
+            {text : "1", correct : false},
+        ]
+        
+    },
+    {
+        question : "When did Aang get his tattoos?",
+        answers : [
+            {text : "At a naming ceremony", correct : false},
+            {text : "When he turned 10", correct : false},
+            {text : "When he mastered Airbending", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
+        ]
+        
+    },
+    {
+        question : "",
+        answers : [
+            {text : "", correct : false},
+            {text : "", correct : false},
+            {text : "", correct : true},
         ]
         
     },

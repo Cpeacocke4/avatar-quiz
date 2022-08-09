@@ -61,6 +61,12 @@ body {
     display: none;
 }
 
+
+#question-tally {
+    margin: 0;
+    font-size: .5em;
+}
+
 .text-content {
     text-align: center;
     padding: 1.5em;
@@ -114,12 +120,12 @@ a {
     text-align: center;
 }
 
-.answer-btn.correct {
+.correct {
     background-color: #6d935c;
     color: white;
 }
 
-.answer-btn.wrong {
+.wrong {
     background-color: #b72f15;
     color: white;
 }
