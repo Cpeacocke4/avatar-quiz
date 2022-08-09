@@ -271,434 +271,218 @@ const questions = [
         
     },
     {
-        question : "",
+        question : "Who was the Avatar before Aang?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Avatar Kyoshi", correct : false},
+            {text : "Avatar Roku", correct : true},
+            {text : "Firelord Ozai", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is Zuko's father?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Roku", correct : false},
+            {text : "Ozai", correct : true},
+            {text : "Sheng", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is the Blind Bandit?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Toph", correct : true},
+            {text : "Katara", correct : false},
+            {text : "Zuko", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is the Blue Spirit?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Zuko", correct : true},
+            {text : "Iroh", correct : false},
+            {text : "Jet", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is the Lady of the Lake?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Tai Lee", correct : false},
+            {text : "Azula", correct : false},
+            {text : "Katara", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "What kind of a bender is Toph?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Water", correct : false},
+            {text : "Earth", correct : true},
+            {text : "Fire", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is Katara's waterbending master?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Master Sen- Sei", correct : false},
+            {text : "Master Pakku", correct : true},
+            {text : "Gran-Gran", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who names a saber-tooth moose lion Fufucuddlypoops?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Sokka", correct : true},
+            {text : "Aanf", correct : false},
+            {text : "Toph", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "Who was kidnapped outside Wan Shi Tong's Library?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Appa", correct : true},
+            {text : "Katara", correct : false},
+            {text : "Momo", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "What type of bender was the avatar before Aang?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Water", correct : false},
+            {text : "Fire", correct : true},
+            {text : "Air", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "What is the Kyoshi Island named after?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "A giant fish", correct : false},
+            {text : "One of the previous Avatars", correct : true},
+            {text : "A type of food", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "What does Aang name himself when he goes to the Fire Nation school?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Kuzon", correct : true},
+            {text : "Lee", correct : false},
+            {text : "Jin", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who was named the 'The Runaway'?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Zuko", correct : false},
+            {text : "Toph", correct : true},
+            {text : "Aang", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who is Sokka's swordmaster?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Pakku", correct : false},
+            {text : "Iroh", correct : false},
+            {text : "Piandao", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "What kind of benders are Lo and Li?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Fire", correct : true},
+            {text : "Water", correct : false},
+            {text : "Air", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "What was Omashu later renamed?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Ba Sing Sei", correct : false},
+            {text : "New Ozai", correct : true},
+            {text : "The Republic", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who teaches Aang how to Energy (Spirit) Bend?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Guru Patik", correct : false},
+            {text : "Dragon", correct : false},
+            {text : "Lion Turtle", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "Who is known as The Puppetmaster?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Kanna", correct : false},
+            {text : "Katara", correct : false},
+            {text : "Hama", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "Who created metal bending?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "King Bumi", correct : false},
+            {text : "Toph", correct : true},
+            {text : "Avatar Roku", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "What is the exact age of Aang?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "116", correct : false},
+            {text : "112", correct : true},
+            {text : "13", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Zuko is able to track Aang using what?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Katara's Necklace", correct : true},
+            {text : "An Airbending Scroll", correct : false},
+            {text : "Appa's fur", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "What is the name of the group responsible for burning down Jet's village?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "The Terra Team", correct : false},
+            {text : "The Rough Rhinos", correct : true},
+            {text : "The Zhang Riders", correct : false},
         ]
         
     },
     {
-        question : "",
+        question : "Who was Aang's guardian as a child?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "Avatar Roku", correct : false},
+            {text : "Guru Patik", correct : false},
+            {text : "Monk Gyasto", correct : true},
         ]
         
     },
     {
-        question : "",
+        question : "Who created the Di Lee agents?",
         answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
-        ]
-        
-    },
-    {
-        question : "",
-        answers : [
-            {text : "", correct : false},
-            {text : "", correct : false},
-            {text : "", correct : true},
+            {text : "The Earth King", correct : false},
+            {text : "Azula", correct : false},
+            {text : "Long Feng", correct : true},
         ]
         
     },
