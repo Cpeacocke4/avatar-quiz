@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.getAttribute("data-type") === "start") {
                 startGame();
             } else if (this.getAttribute("data-type") === "next") {
-                currentQuestionIndex++
+                currentQuestionIndex++;
                 nextQuestion();
-            } else if (this.getAttribute("data-type") === "submit") {
-                calculateResult();
             } else if (this.getAttribute("data-type") === "play-again") {
                 startGame();
             } else if (this.getAttribute("data-type") === "home-screen") {
@@ -28,7 +26,7 @@ let resultPage = document.getElementById("result-page");
 
 let questionElement = document.getElementById("question");
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
 let answerButtonsDiv = document.getElementById('answers');
 
@@ -58,7 +56,7 @@ function nextQuestion() {
     numOfQuestions ++;
 
     let questionTally = document.getElementById('question-tally');
-    questionTally.innerText = `${numOfQuestions}/10`
+    questionTally.innerText = `${numOfQuestions}/10`;
 
     if (numOfQuestions === 11) {
 
@@ -77,15 +75,15 @@ function showQuestion(question) {
     
     question.answers.forEach(answer => {
         
-        let button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add('answer-btn')
+        let button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add('answer-btn');
         
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
         
-        button.addEventListener('click', selectAnswer)
+        button.addEventListener('click', selectAnswer);
         answerButtonsDiv.appendChild(button);
     });  
 }
@@ -95,7 +93,7 @@ function resetState() {
     nextButton.classList.add('hide');
 
     while (answerButtonsDiv.firstChild) {
-        answerButtonsDiv.removeChild(answerButtonsDiv.firstChild)
+        answerButtonsDiv.removeChild(answerButtonsDiv.firstChild);
     }
 }
 
@@ -136,7 +134,7 @@ function disableAnswers() {
         for(var i = 0; i < answerButtons.length; i++) {
             answerButtons[i].disabled = true;
         }
-        console.log('Asnwers Disabled!')
+        console.log('Asnwers Disabled!');
 }
 
 function endQuiz() {
@@ -150,11 +148,11 @@ function endQuiz() {
     if (score > 5) {
         resultHeader.innerText = 'Well Done!';
         resultMessage.innerText = `Your final score was ${score}, this means that you
-        are an Avatar The Last Airbender Superfan!`
+        are an Avatar The Last Airbender Superfan!`;
     } else if (score < 5) {
         resultHeader.innerText = 'Oh No!';
         resultMessage.innerText = `Your final score was ${score}, this means that you
-        need to rewatch Avatar The Last Airbender... `
+        need to rewatch Avatar The Last Airbender... `;
     }
 }
 
@@ -337,7 +335,7 @@ const questions = [
         question : "Who names a saber-tooth moose lion Fufucuddlypoops?",
         answers : [
             {text : "Sokka", correct : true},
-            {text : "Aanf", correct : false},
+            {text : "Aang", correct : false},
             {text : "Toph", correct : false},
         ]
         
@@ -347,7 +345,7 @@ const questions = [
         answers : [
             {text : "Appa", correct : true},
             {text : "Katara", correct : false},
-            {text : "Momo", correct : true},
+            {text : "Momo", correct : false},
         ]
         
     },
@@ -486,5 +484,4 @@ const questions = [
         ]
         
     },
-]
-
+];
