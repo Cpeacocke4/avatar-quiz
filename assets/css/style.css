@@ -11,10 +11,6 @@ body {
     color: white;
 }
 
-.hide {
-    display: none;
-}
-
 /* Logo Styling */
 
 #logo-container {
@@ -138,5 +134,9 @@ a {
     padding: 1em;
     background: none;
     color: white;
+}
+
+.hide {
+    display: none;
 }
 
