@@ -10,11 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 nextQuestion();
             } else if (this.getAttribute("data-type") === "submit") {
                 calculateResult();
+            } else if (this.getAttribute("data-type") === "play-again") {
+                startGame();
+            } else if (this.getAttribute("data-type") === "home-screen") {
+                homeScreen();
             }
         });
     }
 
 });
+
+let welcomePage = document.getElementById("welcome-page");
+    
+let questionPage = document.getElementById("question-page");
+
+let resultPage = document.getElementById("result-page");
 
 let questionElement = document.getElementById("question");
 
@@ -30,14 +40,13 @@ let numOfQuestions = 0;
 
 function startGame() {
     
-    let welcomePage = document.getElementById("welcome-page");
-    let questionPage = document.getElementById("question-page");
-    
     shuffledQuestions = questions.sort((a, b) => 0.5 - Math.random());
     currentQuestionIndex = 0;
+    numOfQuestions = 0;
     
     welcomePage.classList.add("hide");
     questionPage.classList.remove("hide");
+    resultPage.classList.add('hide');
 
     nextQuestion();
 }
@@ -51,7 +60,7 @@ function nextQuestion() {
     let questionTally = document.getElementById('question-tally');
     questionTally.innerText = `${numOfQuestions}/10`
 
-    if (numOfQuestions === 10) {
+    if (numOfQuestions === 11) {
 
         endQuiz();
     } else {
@@ -131,7 +140,29 @@ function disableAnswers() {
 }
 
 function endQuiz() {
-    console.log('Quiz Ended, You suck!!!');
+
+    questionPage.classList.add('hide');
+    resultPage.classList.remove('hide');
+
+    let resultHeader = document.getElementById('result-header');
+    let resultMessage = document.getElementById('result-msg');
+
+    if (score > 5) {
+        resultHeader.innerText = 'Well Done!';
+        resultMessage.innerText = `Your final score was ${score}, this means that you
+        are an Avatar The Last Airbender Superfan!`
+    } else if (score < 5) {
+        resultHeader.innerText = 'Oh No!';
+        resultMessage.innerText = `Your final score was ${score}, this means that you
+        need to rewatch Avatar The Last Airbender... `
+    }
+}
+
+function homeScreen() {
+    
+    questionPage.classList.add('hide');
+    resultPage.classList.add('hide');
+    welcomePage.classList.remove("hide");
 }
 
 const questions = [

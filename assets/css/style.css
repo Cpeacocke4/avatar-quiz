@@ -103,7 +103,7 @@ p {
     color: #984737;
 }
 
-#home-screen {
+.home-screen {
     display: flex;
     margin: auto;
     padding: 1em;
