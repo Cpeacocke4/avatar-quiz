@@ -1,9 +1,11 @@
 # The Ultimate Avatar Quiz
-The Ultimate Avatar Quiz is a multiple choice quiz game for the Avatar The Last Airbender fan to test their skills with, and increase their knowledge of Avatar with.  
+The Ultimate Avatar Quiz is a multiple choice quiz game for the Avatar The Last Airbender fan to test their skills, and increase their knowledge of Avatar with in a fun and aesthetic way. 
+
+This site is targeted towards people of all ages who love Avatar The Last Airbender and want to test their general knowledge on the series.
 
 Welcome to [The Ultimate Avatar Quiz](https://cpeacocke4.github.io/avatar-quiz/)
 
-![Mock-up of Up Dog Studios on various devices](assets/README-images/mock-up.png)
+![Mock-up of The Ultimate Avatar Quiz on various devices](assets/README-images/mock-up.png)
 
 ## **Contents** 
 
@@ -21,144 +23,86 @@ Welcome to [The Ultimate Avatar Quiz](https://cpeacocke4.github.io/avatar-quiz/)
 ### • **Wireframe**
 The wireframe for the Avatar Quiz was created using [Adobe Illustrator](https://www.adobe.com/), and shows the basic structures of the quiz on both desktop and mobile.
 
-![Screenshot of wireframe](assets/README-images/up-dog-wireframe.png)
+![Screenshot of wireframe](assets/README-images/wireframe.png)
 
 ### • **Mock Up**
 The mockup for the site was created using [Adobe Illustrator](https://www.adobe.com/) and contains the overall design, image layout and text layout for the site. 
 
-![Screenshot of mockup](assets/README-images/mockup.png)
+![Screenshot of mockup](assets/README-images/design-mock-up.png)
 
 ### • **Colour Scheme**
-The colour scheme for the site was chosen with the sites purpose and user in mind. Calm, proffesional and welcoming colours were chosen specifically to create the desired feel for the site.
+The colour scheme for the site was chosen with the sites purpose and content focus in mind. Colours that resemble the schemes used in the Avatar The Last Airbender series, and are chosen to create a satisfying and clean look.
 
-![Screenshot of colour scheme](assets/README-images/colours.png)
+![Screenshot of colour scheme](assets/README-images/colour-scheme.png)
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Features** 
-The Up Dog Studios website is designed to be an intuitive experience that encourages once off learning. All of the features implemented were chosen to create a smooth user experience with the aim of educating the target audience about Up Dog Studios and encouraging them to book a class. 
+The Avatar Quiz is designed to be an intuitive experience that allows for a fun and easy game experienc for the user. All of the features implemented were chosen to create a smooth navigation experience through the quiz, and allow the user to focus on the fun and the knowledge! 
 
-### **Home Page**
+### **Logo**
 
-#### • **Navigation Bar** 
-* The navigation bar is featured on all four pages and includes links to the Logo, Home page, About page, Book page and Contact page. 
+* The logo was custom created in [Adobe Illustrator](https://www.adobe.com/), and was designed to fit within the Avatar The Last Airbender theme, and immediately let the user know of the quiz' content and purpose.
 
-* The navigation bar is identical on all pages to ensure a smooth navigation experience for the user. 
+![Screenshot of nav bar](assets/README-images/logo.png) 
 
-![Screenshot of nav bar](assets/README-images/nav-bar.png) 
+### • **Welcome Page** 
+* The landing page: 
+* Welcomes the user to the quiz and explains the parameters and rules of the quiz. 
+* Contains a button to start the quiz labeled 'Start' which initiates the quiz.
+* Has a readable and contrasting font to the background and clear markings for the user to follow and start the quiz.
 
-#### • **Hero Image** 
-* The landing page includes an eye catching hero image that ties in with the overall topic of the website and gives the user an immediate idea of what the site's purpose is.
 
-* The image includes a text overlay with a hook text giving a catchy description of Up Dog Studio's mission, and a button linking to the booking page.
+![Screenshot of hero image](assets/README-images/welcome-screen.png)
 
-![Screenshot of hero image](assets/README-images/hero-image.png)
+### • **Quiz Page** 
+* The quiz page:
+* Has a question number tally at the top of the page to show the user how many questions they have answered out of 10.
+* Shows a question that is randomised upon every initiation of the quiz.
+* Has three clickable buttons containing the answers, which upon being clicked show the correct and incorrect answers in red and green.
+* Shows a next button once the user has chosen their answer. 
+* Has a homescreen button that takes the user back to the [Welcome Page](#welcome-page).
 
-#### • **Ethos Section** 
-* The ethos section has both a paragraph explaing more of Up Dog's mission, as well as two boxes containing information about who Up Dog is, and what classes they have to offer with buttons that link to the relevant pages and sections for more information.
 
-![Screenshot of ethos section](assets/README-images/ethos.png)
+![Screenshot of ethos section](assets/README-images/question-screen.png)
 
-#### • **Times Section** 
-* The times section contains a table with the opening times for the studio on both weekdays and weekends to help give the user an idea of when they are able to visit the studio and book classes.
+### • **Result Page** 
+The result page: 
+* Shows the users score, and displays two different messages based on the users score.
+* Contains a 'Play Again' button that re-initialises the quiz.
+* Has a homescreen button that takes the user back to the [Welcome Page](#welcome-page).
 
-![Screenshot of times section](assets/README-images/times.png)
-
-#### • **Testimonies Section** 
-* The testimonies section contains for rows of testimonies with both a headshot of the member as well as a text field containing their experience at Up Dog, the aim of this is to give the user a feel of what to expect from Up Dog and reassure them of the studio's reliability. 
-
-![Screenshot of testimony section](assets/README-images/testimonies.png)
-
-#### • **Footer**
-* The footer bar is featured on all four pages, and contains 4 social media icons that each link to their respective social medias, Facebook, Twitter, Youtube and Instagram. 
-
-![Screenshot of footer](assets/README-images/footer.png)
-
-### **About Page** 
-
-#### • **Who We Are Section**
-* This sections contains an image of class members from Up Dog studios and text content explaining more about who Up Dog is. 
-* This section will allow the user to gain more information about Up Dog Studios.
-
-![Screenshot of who we are section](assets/README-images/wwa.png)
-
-#### • **Classes Section** 
-* This section contains information about the four typses of classes that Up Dog Studios has to offer. Each class is contained within its own box and has both a heading and text content explaining the type of yoga.
-
-* This section will give the user more information on what classes they are able to book.
-
-![Screenshot of class section](assets/README-images/classes.png)
-
-#### • **Instructors Section** 
-* This section introduces the three instructors at Up Dog Studios. 
-* Each instructor has a headshot image, their name and a short introduction about who they are.
-
-* This section will give the user reassurance that they will be led by professionals when they book a class with Up Dog.
-
-![Screenshot of instructors section](assets/README-images/instructors.png)
-
-#### • **Your Space Section** 
-* This section contains an image of a class in progress and text content explaining more about the Up Dog studio and what the user can expect from the Up Dog space. 
-
-### **Booking Page**
-The booking page is where the user will book their class in an efficient and user friendly mannor.
-The booking page is comprised of 3 input sections: 
-
-* The class type which has text and radio buttons, and the class time, which also is comprised of text and radio buttons for the user to choose from. 
-
-![Screenshot of booking page](assets/README-images/booking-1.png)
-
-* Next is a text input section for the users name and email address, and finally a submit button.
-
-![Screenshot of booking page](assets/README-images/booking-2.png)
-
-### **Contact Page** 
-Upon arrival to the contact page the user will be met with a welcoming header image that encourages them to get in contact with Up Dog Studios if they have any queries.
-
-![Screenshot of contact page header](assets/README-images/contact-header.png)
-
-* The contact page then has two input field sections, one for the users personal information, a text input field where the user may enter their query, and finally a submit button for the form. 
-
-![Screenshot of contact page form](assets/README-images/contact-input.png)
-
-* Finally, the contact page has an iframe map linked to the google maps location of Up Dog Studios, to better help the user find the studio. 
-
-![Screenshot of contact page map](assets/README-images/map.png)
-
-### **Submit Button Landing Page** 
-* When the user clicks the submit button on both the booking form and contact form, the user will be redirected to a landing page that informs them that their information is being processed and they can expect a timely response. 
-* The page also includes a button that links back to the home page for easy navigation. 
-
-![Screenshot of the submit landing page](assets/README-images/submit-landing.png)
-
-[Back to Top](#up-dog-studios)
+![Screenshot of times section](assets/README-images/result-screen.png)
 
 ### **Future Features** 
 
-* A blog for yoga theory and techniques.
-* A live streaming platform for classes.
-* A video library of recorded classes accesable by members only.
+* Different levels of the quiz.
+* Multiple quiz topics.
+* Background music on page load.
+* Sound affects for user interactions.
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Technologies Used** 
 
 * [HTML5](https://html.spec.whatwg.org/) - For websites structure.
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - For the websites styling.
+* [Javascript](https://www.javascript.com/) - For the websites functionality.
 * [Adobe Illustrator](https://www.adobe.com/) - For the wireframes and mockups.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used to host and edit the website
 * [Github](https://github.com/) - Used to deploy the website.
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Testing** 
-Up Dog studios has been extensively tested and found to have minimal to no errors in its structure and styling. 
+The site has been extensively tested and found to have minimal to no errors in its structure and styling, and functionality. The game works on multiple browsers and all functions work according to their purpose.
 
 ### • **Code Validation**
-All code has been tested through the [W3C html validator](https://validator.w3.org/) and the [W3C css validator](https://jigsaw.w3.org/css-validator/).
+All code has been tested through the [W3C html validator](https://validator.w3.org/), the [W3C css validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Javascript validator](https://jshint.com/).
 
 * Minor structural errors were found in the html validation and upon fixing no errors were returned. 
 * The css validation was returned with no errors.
+* Javascript returned minor syntax errors and warnings and upon fixing no errors were returned.
 
 HTML validation result: 
 ![Screenshot of html validation result](assets/README-images/html-validation.png)
@@ -166,33 +110,27 @@ HTML validation result:
 CSS validation result: 
 ![Screenshot of css validation result](assets/README-images/css-validation.png)
 
+Javascript validation result:
+![Screenshot of css validation result](assets/README-images/css-validation.png)
+
 ### • **Responsiveness Testing** 
 The responsive design tests were carried out manually using [Google Chrome dev tools](https://developer.chrome.com/docs/devtools/), [Responsive Design Checker](https://responsivedesignchecker.com/), as well as manual testing on various devices.
 
-From 320px screen width up to 2000px and above the Up Dog Studios website remained cohesive in design and layout: 
+From 320px screen width up to 2000px and above the site website remained cohesive in design and layout: 
 * All items flexing correctly and minimal changes to the design. 
 * All images rendering correctly.
-* All links remaining in tact.
 * All content showing as desired. 
 
 ### • **Browser Compatibility** 
-The Up Dog Studios website was tested on Google Chrome, Safari and Mozilla Firefox and resulted in no errors or major changes in structure, styling or preformance. 
+The website was tested on Google Chrome, Safari and Mozilla Firefox and resulted in no errors or major changes in structure, styling or preformance. 
 
 ### • **Bugs** 
 #### **Fixed Bugs** 
 During validation a few errors were returned for the index.html file, as listed below: 
 
-![Screenshot of html validation error](assets/README-images/error-1.png)
-* The h1 heading element was used six times throughout the home page, to fix this error the relevant h1 elements were changed to h2 and the CSS styling was updated to maintain cohesive styling.
-
-![Screenshot of html validation error](assets/README-images/error-2.png)
-* An oversight during the process of creating the structure caused a stray div ending tag, this was an easy fix through deletion of the stray tag.
-
-![Screenshot of html validation error](assets/README-images/error-3.png)
-* Another oversight during the creation of the structure, a section was left without a closing tag. This was quickly fixed by adding the relevant closing tag. 
 
 #### **Unfixed Bugs**
-There are no unfixed bugs within the Up Dog Website.
+There are no unfixed bugs within the website.
 
 ### **Preformance testing** 
 The site was finally tested using [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) which tested for: 
@@ -202,10 +140,9 @@ The site was finally tested using [Google Lighthouse](https://developer.chrome.c
 * SEO.
 
 The results are shown below: 
-![Screenshot of lighthouse testing result](assets/README-images/Lighthouse.png)
-*Note: I was unable to compress certain images further without losing the image quality, therefore the overall performance score was capped at 79%. 
+![Screenshot of lighthouse testing result](assets/README-images/lighthouse.png)
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Deployment** 
 The site was deployed to GitHub pages. 
@@ -233,23 +170,22 @@ To make a local clone of this project follow these steps:
 * Type in 'git clone' and paste in the URL copied from this repository.
 * Click enter and your clone will be created!
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Credits**
 
 #### • **Content**
 
 * Fonts came from [Google Fonts](https://fonts.google.com/)
-* Maps came from [Google Maps](https://www.google.com/maps/@59.3395712,18.0541727,14z)
-* Icons came from [Font Awesoem](https://fontawesome.com/)
-* The footer structure was inspired by the [Love Running Project](https://github.com/Cpeacocke4/love-running)
+* The function to render the quiz questions was inspire by [This Youtube video](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified)
+* The code for the event listeners was referenced from [Code Institutes Love Maths project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things)
 
 ### • **Media**
 
-* All images were sourced from [Unsplash](https://unsplash.com/)
-* Class information was copied from [wikipedia articles](https://www.wikipedia.org/)
+* Background Image was sourced from [Freepik.com]( https://www.freepik.com/)
+* Quiz questions were sourced from [Funtrivia.com](https://www.funtrivia.com/quizzes/for_children/tv_for_kids_a-c/avatar_the_last_airbender.html)
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Acknowledgements**
 The site was completed as a portfolio project for the Full Stack Software Developer Diploma at [Code Institute](https://codeinstitute.net/se/). 
@@ -262,4 +198,4 @@ I would like to thank all those who were involved in supporting me through this 
 
 Christy Peacocke 2022.
 
-[Back to Top](#up-dog-studios)
+[Back to Top](#the-ultimate-avatar-quiz)

@@ -51,6 +51,10 @@ body {
     font-size: 2em;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
 p {
     margin-top: 1em;
 }
@@ -87,8 +91,8 @@ p {
     background: white;
     border: none;
     border-radius: 35px;
-    height: 2em;
-    width: 5em;
+    height: 2.5em;
+    width: 6em;
     margin-top: 2em;
 }
 
@@ -98,7 +102,7 @@ p {
     background: white;
     border: none;
     border-radius: 35px;
-    height: auto;
+    height: 3em;
     width: auto;
     margin-top: 2em;
     margin-left: 0.5em;

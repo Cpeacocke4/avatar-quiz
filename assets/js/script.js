@@ -50,6 +50,7 @@ function startGame() {
     shuffledQuestions = questions.sort((a, b) => 0.5 - Math.random());
     currentQuestionIndex = 0;
     numOfQuestions = 0;
+    score = 0;
     
     welcomePage.classList.add("hide");
     questionPage.classList.remove("hide");
@@ -174,11 +175,11 @@ function endQuiz() {
     let resultHeader = document.getElementById('result-header');
     let resultMessage = document.getElementById('result-msg');
 
-    if (score > 5) {
+    if (score >= 5) {
         resultHeader.innerText = 'Well Done!';
         resultMessage.innerText = `Your final score was ${score}, this means that you
         are an Avatar The Last Airbender Superfan!`;
-    } else if (score < 5) {
+    } else if (score <= 4) {
         resultHeader.innerText = 'Oh No!';
         resultMessage.innerText = `Your final score was ${score}, this means that you
         need to rewatch Avatar The Last Airbender... `;
