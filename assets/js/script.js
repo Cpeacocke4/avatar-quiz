@@ -338,7 +338,7 @@ const questions = [
         answers : [
             {text : "Sokka", correct : true},
             {text : "Aanf", correct : false},
-            {text : "Toph", correct : true},
+            {text : "Toph", correct : false},
         ]
         
     },
