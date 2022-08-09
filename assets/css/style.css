@@ -11,21 +11,11 @@ body {
     color: white;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
+.hide {
+    display: none;
 }
 
-#game-body {
-    height: auto;
-    width: 60%;
-    min-width: 400px;
-    margin: auto 0;
-    margin-bottom: 2em;
-    border-radius: 30px;
-    background-color: rgb(247, 220, 196, .95);
-}
+/* Logo Styling */
 
 #logo-container {
     display: flex;
@@ -34,6 +24,14 @@ body {
 
 #logo {
     height: 10em;
+}
+
+/* Console Styling */
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
 }
 
 .console-container {
@@ -51,22 +49,6 @@ body {
     background-color: #e57027;
 }
 
-.question-console {
-    background: #9ac1e1;
-    display: flex;
-    justify-content: center;
-}
-
-.hide {
-    display: none;
-}
-
-
-#question-tally {
-    margin: 0;
-    font-size: .5em;
-}
-
 .text-content {
     text-align: center;
     padding: 1.5em;
@@ -76,6 +58,32 @@ body {
 p {
     margin-top: 1em;
 }
+
+/* Game Styling */
+
+#game-body {
+    height: auto;
+    width: 60%;
+    min-width: 400px;
+    margin: auto 0;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    background-color: rgb(247, 220, 196, .95);
+}
+
+.question-console {
+    background: #9ac1e1;
+    display: flex;
+    justify-content: center;
+}
+
+#question-tally {
+    margin: 0;
+    font-size: .5em;
+}
+
+
+/* Button Styling */
 
 .btn {
     color: #9ac1e1;
@@ -103,14 +111,6 @@ p {
     color: #984737;
 }
 
-.home-screen {
-    display: flex;
-    margin: auto;
-    padding: 1em;
-    background: none;
-    color: white;
-}
-
 .btn:hover {
     color: #984737;
 }
@@ -127,6 +127,16 @@ a {
 
 .wrong {
     background-color: #b72f15;
+    color: white;
+}
+
+/* Homescreen Button */
+
+.home-screen {
+    display: flex;
+    margin: auto;
+    padding: 1em;
+    background: none;
     color: white;
 }
 

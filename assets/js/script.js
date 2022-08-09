@@ -1,3 +1,7 @@
+/** Event Listeners for Program 
+ * code referenced from the Code Institute Love Maths project: https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things
+ */ 
+
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
@@ -18,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+/** Global variables */  
+
 let welcomePage = document.getElementById("welcome-page");
     
 let questionPage = document.getElementById("question-page");
@@ -36,6 +42,9 @@ let score = 0;
 
 let numOfQuestions = 0;
 
+ /** Start game function randomises the questions array, hides the intro screen,
+ shows the game console, and calls the nextQuestion function */
+
 function startGame() {
     
     shuffledQuestions = questions.sort((a, b) => 0.5 - Math.random());
@@ -48,6 +57,8 @@ function startGame() {
 
     nextQuestion();
 }
+
+/** nextQuestion function sets the question for the showQuestion function and controls the question tally */
 
 function nextQuestion() {
     
@@ -69,6 +80,10 @@ function nextQuestion() {
     console.log("Next Question Loaded!");  
 }
 
+/** showQuestion function creates answer buttons and plugs the question content into the corresponding html elements 
+ *  code referenced from: https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified
+*/
+
 function showQuestion(question) {
     
     questionElement.innerHTML = 'Q: '+ question.question;
@@ -88,6 +103,10 @@ function showQuestion(question) {
     });  
 }
 
+/** resetState clears the question elements in preparation for the next question
+ * code referenced from: https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified
+ */
+
 function resetState() {
     let nextButton = document.getElementById('next-btn');
     nextButton.classList.add('hide');
@@ -96,6 +115,10 @@ function resetState() {
         answerButtonsDiv.removeChild(answerButtonsDiv.firstChild);
     }
 }
+
+/** selectAnswer function displays the correct and incorrect answers to the user, increments the score
+ * based off of the users selected answer, and calls the disableAnswer function.
+ */
 
 function selectAnswer(event) {
     
@@ -127,6 +150,8 @@ function selectAnswer(event) {
     console.log(score);
 }
 
+/** disableAnswer function disables the answer buttons to prevent the user from selecting another answer */
+
 function disableAnswers() {
 
         let answerButtons = document.getElementsByClassName('answer-btn');
@@ -136,6 +161,10 @@ function disableAnswers() {
         }
         console.log('Asnwers Disabled!');
 }
+
+/** endQuiz function hides the game and reveals the result screen with two varying outputs that depend on the 
+ * users final score.
+ */
 
 function endQuiz() {
 
@@ -156,12 +185,16 @@ function endQuiz() {
     }
 }
 
+/** homeScreen function displays the starting screen to the user upon clicking the homescreen button */
+
 function homeScreen() {
     
     questionPage.classList.add('hide');
     resultPage.classList.add('hide');
     welcomePage.classList.remove("hide");
 }
+
+/** Quiz questions array */
 
 const questions = [
     {
