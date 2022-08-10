@@ -110,9 +110,6 @@ HTML validation result:
 CSS validation result: 
 ![Screenshot of css validation result](assets/README-images/css-validation.png)
 
-Javascript validation result:
-![Screenshot of css validation result](assets/README-images/css-validation.png)
-
 ### • **Responsiveness Testing** 
 The responsive design tests were carried out manually using [Google Chrome dev tools](https://developer.chrome.com/docs/devtools/), [Responsive Design Checker](https://responsivedesignchecker.com/), as well as manual testing on various devices.
 
@@ -126,8 +123,10 @@ The website was tested on Google Chrome, Safari and Mozilla Firefox and resulted
 
 ### • **Bugs** 
 #### **Fixed Bugs** 
-During validation a few errors were returned for the index.html file, as listed below: 
+During validation a few errors were returned for the index.html file, as listed below:
 
+* Structural error with h3 element used before h1: This bug was fixed simply by changing the h3 elements to h1.
+* An empty h1 element: This was simply fixed by adding text to the element.
 
 #### **Unfixed Bugs**
 There are no unfixed bugs within the website.
