@@ -1,5 +1,5 @@
 # The Ultimate Avatar Quiz
-The Ultimate Avatar Quiz is a multiple choice quiz game for the Avatar The Last Airbender fan to test their skills, and increase their knowledge of Avatar with in a fun and aesthetic way. 
+The Ultimate Avatar Quiz is a multiple choice quiz game for the Avatar The Last Airbender fan to test their skills, and increase their knowledge of Avatar in a fun and aesthetic way. 
 
 This site is targeted towards people of all ages who love Avatar The Last Airbender and want to test their general knowledge on the series.
 
@@ -31,7 +31,7 @@ The mockup for the site was created using [Adobe Illustrator](https://www.adobe.
 ![Screenshot of mockup](assets/README-images/design-mock-up.png)
 
 ### • **Colour Scheme**
-The colour scheme for the site was chosen with the sites purpose and content focus in mind. Colours that resemble the schemes used in the Avatar The Last Airbender series, and are chosen to create a satisfying and clean look.
+The colour scheme for the site was chosen with the sites purpose and content focus in mind. The colours resemble the schemes used in the Avatar The Last Airbender series to create a corrolation between the series and the quiz, and are chosen to create a satisfying and clean look.
 
 ![Screenshot of colour scheme](assets/README-images/colour-scheme.png)
 
@@ -95,7 +95,7 @@ The result page:
 [Back to Top](#the-ultimate-avatar-quiz)
 
 ## **Testing** 
-The site has been extensively tested and found to have minimal to no errors in its structure and styling, and functionality. The game works on multiple browsers and all functions work according to their purpose.
+The site has been extensively tested and found to have minimal to no errors in its structure, styling, and functionality. The game works on multiple browsers and all functions work according to their purpose.
 
 ### • **Code Validation**
 All code has been tested through the [W3C html validator](https://validator.w3.org/), the [W3C css validator](https://jigsaw.w3.org/css-validator/) and the [JSHint Javascript validator](https://jshint.com/).
@@ -127,6 +127,9 @@ During validation a few errors were returned for the index.html file, as listed 
 
 * Structural error with h3 element used before h1: This bug was fixed simply by changing the h3 elements to h1.
 * An empty h1 element: This was simply fixed by adding text to the element.
+* In the css the .hide class did not work as intended due to its position in the DOM, this was fixed by moving the class 
+down to the correct place.
+* The [JSHint validator](https://jshint.com/) returned 7 missing semicolons within the javscript code, this was simply fixed by adding the semicolons.
 
 #### **Unfixed Bugs**
 There are no unfixed bugs within the website.
